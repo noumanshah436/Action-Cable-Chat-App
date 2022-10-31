@@ -13,12 +13,17 @@ Running via Spring preloader in process 319438
 rails new action_cable_chat_app
 cd action_cable_chat_app/
 code .
+
 rails g simple_form:install --bootstrap
 git add -A
 git commit -m "install form"
+
 rails g devise:install
 rails g devise:views
 rails g devise User
+
+
+rails g controller pages home
 rails g model message body:text user:references
 rails g controller messages create
 rails db:migrate
