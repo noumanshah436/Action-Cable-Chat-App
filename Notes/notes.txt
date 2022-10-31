@@ -29,3 +29,15 @@ rails g controller messages create
 rails db:migrate
 
 **********************
+
+change application.rb file for time:
+
+rails time:zones:all
+
+
+***********************
+
+1) rails g channel chat
+
+2) add in development.rb
+ config.action_cable.mount_path = "/cable"
